@@ -1,0 +1,144 @@
+---
+title: "RWorksheet_Montealto#1"
+author: "Pierre Vincent S. Montealto Jr."
+date: "2024-09-20"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+age <- c(34, 28, 22, 36, 27, 18, 52, 39, 42, 29,
+         35, 31, 27, 22, 37, 34, 19, 20, 57, 49,
+         50, 37, 46, 25, 17, 37, 42, 53, 41, 51,
+         35, 24, 33, 41)
+# a. How many data points?
+length(age)
+#34 data points
+
+```
+```{r}
+reciprocal_age <- 1/age
+reciprocal_age
+```
+```{r}
+new_age <- c(age, 0, age)
+new_age
+
+```
+```{r}
+sorted_age <- sort(age)
+sorted_age
+
+```
+```{r}
+min_age <- min(age)
+max_age <- max(age)
+max_age
+
+```
+```{r}
+min_age <- min(age)
+max_age <- max(age)
+min_age
+```
+```{r}
+data <- c(2.4, 2.8, 2.1, 2.5, 2.4, 2.2, 2.5, 2.3, 2.5, 2.3, 2.4, 2.7)
+#a. How many data points?
+length(data)
+# 12 data points
+```
+
+
+```{r}
+doubled_data <- 2 * data
+doubled_data
+# What happen to the data?
+# The values of of data are doubled.
+```
+```{r}
+seq_1to100 <- seq(1, 100)
+seq_1to100
+```
+```{r}
+seq_20to60 <- seq(20, 60)
+seq_20to60
+
+```
+```{r}
+seqmean_20to60 <- mean(seq(20, 60))
+seqmean_20to60
+
+```
+```{r}
+numsum_51to91 <- sum(seq(51, 91))
+numsum_51to91
+
+```
+```{r}
+seq_1to1000 <- seq(1, 1000)
+seq_1to1000
+
+```
+```{r}
+totaldata <- length(seq_1to100) + length(seq_20to60) + length(seqmean_20to60) + length(numsum_51to91)
+totaldata
+# a. How many data points from 8.1 to 8.4? 
+#143 data points from 8.1 to 8.4.
+```
+```{r}
+seq_1to1000 <- seq(1, 1000)
+subset_until_10 <- seq_1to1000[c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)]
+max_value <- max(subset_until_10)
+max_value
+
+```
+```{r}
+filteredval <- Filter(function(i) { all(i %% c(3, 5, 7) != 0) }, seq(100))
+filteredval
+
+```
+```{r}
+seq_100to1 <- seq(100, 1, by=-1)
+seq_100to1
+
+```
+```{r}
+multiples <- Filter(function(x) { x %% 3 == 0 || x %% 5 == 0 }, seq(1, 24))
+multiples
+TotalDataPoints <- length(multiples) + length(seq_100to1)
+TotalDataPoints
+# a. How many data points from 10 to 11?
+#111 data points from 10 to 11.
+```
+```{r}
+# Enter this statement:
+#x <- {0 + x + 5 + }
+# Describe the output.
+# x <- {0 + x + 5 + } This statement results into a syntax error
+
+```
+```{r}
+score <- c(72, 86, 92, 63, 88, 89, 91, 92, 75, 75, 77)
+score[2]
+
+```
+```{r}
+score <- c(72, 86, 92, 63, 88, 89, 91, 92, 75, 75, 77)
+score[3]
+
+```
+```{r}
+a <- c(1, 2, NA, 4, NA, 6, 7)
+print(a, na.print="-999")
+
+```
+```{r}
+name = readline(prompt="Input your name: ")
+age = readline(prompt="Input your age: ")
+print(paste("My name is",name, "and I am",age ,"years old."))
+print(R.version.string)
+
+```
