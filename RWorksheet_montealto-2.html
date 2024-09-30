@@ -355,34 +355,31 @@ display: none;
 <ol style="list-style-type: decimal">
 <li>Create a vector using : operator</li>
 </ol>
-<p>a.Sequence from -5 to 5. Write the R code and its output. Describe
-its output. -This creates a sequence of integers starting from -5 to 5
-using the : operator.</p>
+<ol style="list-style-type: lower-alpha">
+<li>-This creates a sequence of integers starting from -5 to 5 using the
+: operator.</li>
+</ol>
 <pre class="r"><code>seq1 &lt;- -5:5
 seq1</code></pre>
 <pre><code>##  [1] -5 -4 -3 -2 -1  0  1  2  3  4  5</code></pre>
 <ol start="2" style="list-style-type: lower-alpha">
-<li>x &lt;- 1:7. What will be the value of x?</li>
+<li></li>
 </ol>
 <pre class="r"><code>x &lt;- 1:7
 x</code></pre>
 <pre><code>## [1] 1 2 3 4 5 6 7</code></pre>
 <p>2.* Create a vector using seq() function</p>
-<p>a.a. seq(1, 3, by=0.2) # specify step size Write the R script and its
-output. Describe the output.</p>
+<ol style="list-style-type: lower-alpha">
+<li></li>
+</ol>
 <pre class="r"><code>seq2 &lt;- seq(1, 3, by=0.2)
 seq2</code></pre>
 <pre><code>##  [1] 1.0 1.2 1.4 1.6 1.8 2.0 2.2 2.4 2.6 2.8 3.0</code></pre>
 <ol start="3" style="list-style-type: decimal">
-<li>A factory has a census of its workers. There are 50 workers in
-total. The following list shows their ages: 34, 28, 22, 36, 27, 18, 52,
-39, 42, 29, 35, 31, 27, 22, 37, 34, 19, 20, 57, 49, 50, 37, 46, 25, 17,
-37, 43, 53, 41, 51, 35, 24,33, 41, 53, 40, 18, 44, 38, 41, 48, 27, 39,
-19, 30, 61, 54, 58, 26,</li>
 <li></li>
 </ol>
 <ol style="list-style-type: lower-alpha">
-<li>Access 3rd element, what is the value?</li>
+<li></li>
 </ol>
 <pre class="r"><code>ages &lt;- c(34, 28, 22, 36, 27, 18, 52, 39, 42, 29, 35, 31, 27, 22, 37, 34, 
           19, 20, 57, 49, 50, 37, 46, 25, 17, 37, 43, 53, 41, 51, 35, 24, 
@@ -391,27 +388,24 @@ total. The following list shows their ages: 34, 28, 22, 36, 27, 18, 52,
 ages[3]</code></pre>
 <pre><code>## [1] 22</code></pre>
 <ol start="2" style="list-style-type: lower-alpha">
-<li>Access 2nd and 4th element, what are the values?</li>
+<li></li>
 </ol>
 <pre class="r"><code>ages[c(2, 4)]</code></pre>
 <pre><code>## [1] 28 36</code></pre>
 <ol start="3" style="list-style-type: lower-alpha">
-<li>Access all but the 4th and 12th element is not included. Write the R
-script and its output.</li>
+<li></li>
 </ol>
 <pre class="r"><code>ages[-c(4, 12)]</code></pre>
 <pre><code>##  [1] 34 28 22 27 18 52 39 42 29 35 27 22 37 34 19 20 57 49 50 37 46 25 17 37 43
 ## [26] 53 41 51 35 24 33 41 53 40 18 44 38 41 48 27 39 19 30 61 54 58 26 18</code></pre>
 <ol start="4" style="list-style-type: decimal">
-<li>*Create a vector x &lt;- c(“first”=3, “second”=0, “third”=9). Then
-named the vector, names(x).</li>
+<li></li>
 </ol>
 <pre class="r"><code>x &lt;- c(&quot;first&quot;=3, &quot;second&quot;=0, &quot;third&quot;=9)
 names(x)</code></pre>
 <pre><code>## [1] &quot;first&quot;  &quot;second&quot; &quot;third&quot;</code></pre>
 <ol style="list-style-type: lower-alpha">
-<li>Print the results. Then access x[c(“first”, “third”)]. Describe the
-output.</li>
+<li></li>
 </ol>
 <ul>
 <li>It retrieves the values corresponding to the “first” and “third”
@@ -421,9 +415,13 @@ named elements.</li>
 <pre><code>## first third 
 ##     3     9</code></pre>
 <ol start="2" style="list-style-type: lower-alpha">
-<li>Write the code and its output. CODE: x[c(“first”, “third”)]</li>
+<li></li>
 </ol>
-<p>OUTPUT: first third 3 9 5. Create a sequence x from -3:2.</p>
+<p>CODE: x[c(“first”, “third”)]</p>
+<p>OUTPUT: first third 3 9</p>
+<ol start="5" style="list-style-type: decimal">
+<li></li>
+</ol>
 <pre class="r"><code>x &lt;- -3:2
 x</code></pre>
 <pre><code>## [1] -3 -2 -1  0  1  2</code></pre>
@@ -432,16 +430,15 @@ x</code></pre>
 </ol>
 <p>The second element of the sequence is modified to 0.</p>
 <ol start="2" style="list-style-type: lower-alpha">
-<li>Write the code and its output. CODE: x &lt;- -3:2 x[2] &lt;- 0
-x</li>
+<li>Write the code and its output.</li>
 </ol>
+<p>CODE: x &lt;- -3:2 x[2] &lt;- 0 x</p>
 <p>OUTPUT: [1] -3 0 -1 0 1 2</p>
 <ol start="6" style="list-style-type: decimal">
-<li>The following data shows the diesel fuel purchased by Mr. Cruz.</li>
+<li></li>
 </ol>
 <ol style="list-style-type: lower-alpha">
-<li>Create a data frame for month, price per liter (php) and
-purchase-quantity (liter). Write the R scripts and its output.</li>
+<li></li>
 </ol>
 <pre class="r"><code>months &lt;- c(&quot;Jan&quot;, &quot;Feb&quot;, &quot;March&quot;, &quot;Apr&quot;, &quot;May&quot;, &quot;June&quot;)
 price_per_liter &lt;- c(52.50, 57.25, 60.00, 65.00, 74.25, 54.00)
@@ -457,30 +454,30 @@ fuel_data</code></pre>
 ## 5    May           74.25                10
 ## 6   June           54.00                45</code></pre>
 <ol start="2" style="list-style-type: lower-alpha">
-<li>What is the average fuel expenditure of Mr. Cruz from Jan to June?
-Note: Use ’weighted.mean(liter, purchase)’. Write the R scripts and its
-output.</li>
+<li></li>
 </ol>
 <pre class="r"><code>weighted.mean(price_per_liter, purchase_quantity)</code></pre>
 <pre><code>## [1] 59.2625</code></pre>
 <ol start="7" style="list-style-type: decimal">
-<li>R has actually lots of built-in datasets. For example, the rivers
-data “gives the lengths (in miles) of 141 “major” rivers in North
-America, as compiled by the US Geological Survey”.</li>
+<li></li>
 </ol>
 <ol style="list-style-type: lower-alpha">
-<li><p>Type “rivers” in your R console. &gt;rivers</p></li>
-<li><p>What are the results? [1] 735 320 325 392 524 450 1459 135 465
-600 330 336 280 [14] 315 870 906 202 329 290 1000 600 505 1450 840 1243
-890 [27] 350 407 286 280 525 720 390 250 327 230 265 850 210 [40] 630
-260 230 360 730 600 306 390 420 291 710 340 217 [53] 281 352 259 250 470
-680 570 350 300 560 900 625 332 [66] 2348 1171 3710 2315 2533 780 280
-410 460 260 255 431 350 [79] 760 618 338 981 1306 500 696 605 250 411
-1054 735 233 [92] 435 490 310 460 383 375 1270 545 445 1885 380 300 380
-[105] 377 425 276 210 800 420 350 360 538 1100 1205 314 237 [118] 610
-360 540 1038 424 310 300 444 301 268 620 215 652 [131] 900 525 246 360
-529 500 720 270 430 671 1770</p></li>
-<li><p>Write the R scripts and its outputs.</p></li>
+<li><blockquote>
+<p>rivers</p>
+</blockquote></li>
+<li>What are the results?</li>
+</ol>
+<p>[1] 735 320 325 392 524 450 1459 135 465 600 330 336 280 [14] 315 870
+906 202 329 290 1000 600 505 1450 840 1243 890 [27] 350 407 286 280 525
+720 390 250 327 230 265 850 210 [40] 630 260 230 360 730 600 306 390 420
+291 710 340 217 [53] 281 352 259 250 470 680 570 350 300 560 900 625 332
+[66] 2348 1171 3710 2315 2533 780 280 410 460 260 255 431 350 [79] 760
+618 338 981 1306 500 696 605 250 411 1054 735 233 [92] 435 490 310 460
+383 375 1270 545 445 1885 380 300 380 [105] 377 425 276 210 800 420 350
+360 538 1100 1205 314 237 [118] 610 360 540 1038 424 310 300 444 301 268
+620 215 652 [131] 900 525 246 360 529 500 720 270 430 671 1770</p>
+<ol start="3" style="list-style-type: lower-alpha">
+<li></li>
 </ol>
 <pre class="r"><code>data &lt;- c(length(rivers), sum(rivers), mean(rivers), median(rivers), 
           var(rivers), sd(rivers), min(rivers), max(rivers))
@@ -488,13 +485,10 @@ data</code></pre>
 <pre><code>## [1]    141.0000  83357.0000    591.1844    425.0000 243908.4086    493.8708
 ## [7]    135.0000   3710.0000</code></pre>
 <ol start="8" style="list-style-type: decimal">
-<li>The table below gives the 25 most powerful celebrities and their
-annual pay as ranked by the editions of Forbes magazine and as listed on
-the Forbes.com website.</li>
+<li></li>
 </ol>
 <ol style="list-style-type: lower-alpha">
-<li>Create vectors according to the above table. Write the R scripts and
-its output.</li>
+<li></li>
 </ol>
 <pre class="r"><code>celebnames &lt;- c(&quot;Tom Cruise&quot;, &quot;Rolling Stones&quot;, &quot;Oprah Winfrey&quot;, &quot;U2&quot;, &quot;Tiger Woods&quot;, &quot;Steven Spielberg&quot;, &quot;Howard Stern&quot;, &quot;50 Cent&quot;, &quot;Cast of the Sopranos&quot;, &quot;Dan Brown&quot;, &quot;Bruce Springsteen&quot;,  &quot;Donald Trump&quot;, &quot;Muhammad Ali&quot;, &quot;Paul McCartney&quot;, &quot;George Lucas&quot;, &quot;Elton John&quot;,&quot;David Letterman&quot;, &quot;Phil Mickelson&quot;, &quot;J.K Rowling&quot;,&quot;Brad Pitt&quot;,&quot;Peter Jackson&quot;,&quot;Dr. Phil McGraw&quot;, &quot;Jay Lenon&quot;, &quot;Celine Dion&quot;, &quot;Kobe Bryant&quot;)
 pay &lt;- c(67, 90, 225, 110, 90, 332, 302, 41, 52, 88, 55, 44, 55, 40, 233, 34, 40, 47, 75, 25, 39, 45, 32, 40, 31)
@@ -528,8 +522,7 @@ celebdata</code></pre>
 ## 24           24          Celine Dion  40
 ## 25           25          Kobe Bryant  31</code></pre>
 <ol start="2" style="list-style-type: lower-alpha">
-<li>Modify the power ranking and pay of J.K. Rowling. Change power
-ranking to 15 and pay to 90. Write the R scripts and its output.</li>
+<li></li>
 </ol>
 <pre class="r"><code>powerrank[4] &lt;- 15
 pay[4] &lt;- 90
@@ -539,9 +532,7 @@ powerrank</code></pre>
 <pre><code>##  [1]  67  90 225  90  90 332 302  41  52  88  55  44  55  40 233  34  40  47  75
 ## [20]  25  39  45  32  40  31</code></pre>
 <ol start="3" style="list-style-type: lower-alpha">
-<li>Create an excel file from the table above and save it as csv
-file(PowerRanking). Import the csv file into the RStudio. What is the R
-script?</li>
+<li></li>
 </ol>
 <pre class="r"><code>write.csv(celebdata, &quot;Power-Ranking.csv&quot;, row.names = FALSE)
 datarank &lt;- read.csv(&quot;Power-Ranking.csv&quot;)
@@ -573,24 +564,20 @@ datarank</code></pre>
 ## 24           24          Celine Dion  40
 ## 25           25          Kobe Bryant  31</code></pre>
 <ol start="4" style="list-style-type: lower-alpha">
-<li>Access the rows 10 to 20 and save it as Ranks.RData. Write the R
-script and its output.</li>
+<li></li>
 </ol>
 <pre class="r"><code>ranksubset &lt;-datarank[10:20, ]
 save(ranksubset, file = &quot;Ranks.RData&quot;)</code></pre>
-<ol start="5" style="list-style-type: lower-alpha">
-<li>Describe its output.</li>
-</ol>
 <ol start="9" style="list-style-type: decimal">
-<li>Download the Hotels-Vienna <a href="https://tinyurl.com/Hotels-Vienna" class="uri">https://tinyurl.com/Hotels-Vienna</a></li>
+<li></li>
 </ol>
 <ol style="list-style-type: lower-alpha">
-<li>Import the excel file into your RStudio. What is the R script?</li>
+<li></li>
 </ol>
-<pre class="r"><code>library(openxlsx)
+<pre class="r"><code>library(&quot;openxlsx&quot;)
 library(&quot;readxl&quot;)
-hoteldata &lt;- read.xlsx(&quot;hotels-vienna.xlsx&quot;)
-hoteldata</code></pre>
+datahotel &lt;- read.xlsx(&quot;hotels-vienna.xlsx&quot;)
+datahotel</code></pre>
 <pre><code>##     country city_actual rating_count center1label center2label
 ## 1   Austria      Vienna           36  City centre    Donauturm
 ## 2   Austria      Vienna          189  City centre    Donauturm
@@ -2308,17 +2295,15 @@ hoteldata</code></pre>
 ## 427            4.1               Hotel       1    3.2
 ## 428            3.5           Apartment       1    4.0</code></pre>
 <ol start="2" style="list-style-type: lower-alpha">
-<li>How many dimensions does the dataset have? What is the R script?
-WHat is its output?</li>
+<li></li>
 </ol>
-<pre class="r"><code>dim(hoteldata)</code></pre>
+<pre class="r"><code>dim(datahotel)</code></pre>
 <pre><code>## [1] 428  24</code></pre>
 <ol start="3" style="list-style-type: lower-alpha">
-<li>Select columns country, neighbourhood, price, stars,
-accomodation_type, and ratings. Write the R script.</li>
+<li></li>
 </ol>
-<pre class="r"><code>selectedcolumns &lt;- hoteldata[, c(&quot;country&quot;, &quot;neighbourhood&quot;, &quot;price&quot;, &quot;stars&quot;, &quot;accommodation_type&quot;, &quot;rating&quot;)]
-selectedcolumns</code></pre>
+<pre class="r"><code>dataselected &lt;- datahotel[,    c(&quot;country&quot;, &quot;neighbourhood&quot;, &quot;price&quot;, &quot;stars&quot;, &quot;accommodation_type&quot;, &quot;rating&quot;)]
+dataselected</code></pre>
 <pre><code>##     country        neighbourhood price stars  accommodation_type rating
 ## 1   Austria          17. Hernals    81   4.0           Apartment    4.4
 ## 2   Austria          17. Hernals    81   4.0               Hotel    3.9
@@ -2749,12 +2734,11 @@ selectedcolumns</code></pre>
 ## 427 Austria               Wieden    58   3.0               Hotel    3.2
 ## 428 Austria               Wieden   110   3.5           Apartment    4.0</code></pre>
 <ol start="4" style="list-style-type: lower-alpha">
-<li>Save the data as **new.RData to your RStudio. Write the R
-script.</li>
+<li></li>
 </ol>
-<pre class="r"><code>save(selectedcolumns, file = &quot;new.RData&quot;)
+<pre class="r"><code>save(dataselected, file =&quot;new.RData&quot;)
 load(&quot;new.RData&quot;)
-head(selectedcolumns)  </code></pre>
+head(dataselected)</code></pre>
 <pre><code>##   country neighbourhood price stars accommodation_type rating
 ## 1 Austria   17. Hernals    81     4          Apartment    4.4
 ## 2 Austria   17. Hernals    81     4              Hotel    3.9
@@ -2762,7 +2746,7 @@ head(selectedcolumns)  </code></pre>
 ## 4 Austria    Alsergrund    83     3              Hotel    4.0
 ## 5 Austria    Alsergrund    82     4              Hotel    3.9
 ## 6 Austria    Alsergrund   229     5          Apartment    4.8</code></pre>
-<pre class="r"><code>tail(selectedcolumns)  </code></pre>
+<pre class="r"><code>tail(dataselected)</code></pre>
 <pre><code>##     country neighbourhood price stars accommodation_type rating
 ## 423 Austria        Wieden    73   3.0              Hotel    3.4
 ## 424 Austria        Wieden   109   3.0          Apartment    5.0
@@ -2771,11 +2755,10 @@ head(selectedcolumns)  </code></pre>
 ## 427 Austria        Wieden    58   3.0              Hotel    3.2
 ## 428 Austria        Wieden   110   3.5          Apartment    4.0</code></pre>
 <ol start="5" style="list-style-type: lower-alpha">
-<li>Display the first six rows and last six rows of the new.RData. What
-is the R script?</li>
+<li></li>
 </ol>
 <pre class="r"><code>load(&quot;new.RData&quot;)
-head(selectedcolumns, 6)</code></pre>
+head(dataselected)</code></pre>
 <pre><code>##   country neighbourhood price stars accommodation_type rating
 ## 1 Austria   17. Hernals    81     4          Apartment    4.4
 ## 2 Austria   17. Hernals    81     4              Hotel    3.9
@@ -2783,7 +2766,7 @@ head(selectedcolumns, 6)</code></pre>
 ## 4 Austria    Alsergrund    83     3              Hotel    4.0
 ## 5 Austria    Alsergrund    82     4              Hotel    3.9
 ## 6 Austria    Alsergrund   229     5          Apartment    4.8</code></pre>
-<pre class="r"><code>tail(selectedcolumns, 6)</code></pre>
+<pre class="r"><code>tail(dataselected)</code></pre>
 <pre><code>##     country neighbourhood price stars accommodation_type rating
 ## 423 Austria        Wieden    73   3.0              Hotel    3.4
 ## 424 Austria        Wieden   109   3.0          Apartment    5.0
@@ -2792,12 +2775,12 @@ head(selectedcolumns, 6)</code></pre>
 ## 427 Austria        Wieden    58   3.0              Hotel    3.2
 ## 428 Austria        Wieden   110   3.5          Apartment    4.0</code></pre>
 <ol start="10" style="list-style-type: decimal">
-<li>Create a list of ten (10) vegetables you ate during your lifetime.
-If none, just list down.</li>
+<li></li>
 </ol>
 <ol style="list-style-type: lower-alpha">
-<li>Write the R scripts and its output. CODE:</li>
+<li></li>
 </ol>
+<p>CODE:</p>
 <pre class="r"><code>vegetables &lt;- c(&quot;Carrot&quot;, &quot;Broccoli&quot;, &quot;Spinach&quot;, &quot;Kale&quot;, &quot;Cauliflower&quot;, &quot;Tomato&quot;, &quot;Cucumber&quot;, &quot;Bell Pepper&quot;, &quot;Onion&quot;, &quot;Lettuce&quot;)
 vegetables</code></pre>
 <pre><code>##  [1] &quot;Carrot&quot;      &quot;Broccoli&quot;    &quot;Spinach&quot;     &quot;Kale&quot;        &quot;Cauliflower&quot;
@@ -2806,8 +2789,7 @@ vegetables</code></pre>
 [5] “Cauliflower” “Tomato” “Cucumber” “Bell Pepper” [9] “Onion”
 “Lettuce”</p>
 <ol start="2" style="list-style-type: lower-alpha">
-<li>Add 2 additional vegetables after the last vegetables in the list.
-What is the R script and its output? CODE:</li>
+<li></li>
 </ol>
 <pre class="r"><code>vegetables &lt;- c(vegetables, &quot;Zucchini&quot;, &quot;Eggplant&quot;)
 vegetables</code></pre>
@@ -2817,10 +2799,9 @@ vegetables</code></pre>
 <p>OUTPUT: [1] “Carrot” “Broccoli” “Spinach” “Kale”<br />
 [5] “Cauliflower” “Tomato” “Cucumber” “Bell Pepper” [9] “Onion”</p>
 <ol start="3" style="list-style-type: lower-alpha">
-<li>Add 4 additional vegetables after index 5. How many datapoints does
-your vegetable list have? What is the R script and its output?
-CODE:</li>
+<li></li>
 </ol>
+<p>CODE:</p>
 <pre class="r"><code>vegetables &lt;- append(vegetables, c(&quot;Radish&quot;, &quot;Pumpkin&quot;, &quot;Sweet Potato&quot;, &quot;Beetroot&quot;), after = 5)
 vegetables</code></pre>
 <pre><code>##  [1] &quot;Carrot&quot;       &quot;Broccoli&quot;     &quot;Spinach&quot;      &quot;Kale&quot;         &quot;Cauliflower&quot; 
@@ -2834,8 +2815,7 @@ vegetables</code></pre>
 “Zucchini”<br />
 [16] “Eggplant”</p>
 <ol start="4" style="list-style-type: lower-alpha">
-<li>Remove the vegetables in index 5, 10, and 15. How many vegetables
-were left? Write the codes and its output.</li>
+<li></li>
 </ol>
 <p>CODE:</p>
 <pre class="r"><code>vegetables &lt;- vegetables[-c(5, 10, 15)]
