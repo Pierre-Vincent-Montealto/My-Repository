@@ -1,0 +1,166 @@
+---
+title: "Rworksheet_Montealto#3b"
+author: "Pierre Vincent S. Montealto Jr."
+date: "2024-10-11"
+output: pdf_document
+---
+
+1. Create a data frame using the table below.
+
+
+a. Write the codes.
+
+
+```{r}
+Data <- data.frame(
+  Respondents         = 1:20,
+  Sex                 = c(2, 1, 2, 2, 1, 1, 2, 2, 2, 1, 1, 2, 2, 1, 2, 2, 1, 2, 1, 2),
+  FatherOccupation    = c(1, 2, 3, 1, 2, 1, 3, 2, 3, 3, 1, 3, 2, 1, 3, 1, 3, 3, 1, 1),
+  PersonsAtHome     = c(5, 7, 3, 5, 5, 3, 6, 6, 7, 7, 3, 7, 4, 7, 8, 8, 3, 11, 8, 6),
+  SiblingsAtSchool  = c(6, 4, 3, 2, 3, 3, 5, 5, 4, 5, 3, 7, 5, 2, 1, 3, 1, 5, 3, 2),
+  TypesOfHouses     = c(1, 2, 3, 1, 3, 1, 3, 3, 3, 1, 3, 3, 3, 1, 3, 3, 3, 3, 3, 2)
+)
+
+Data
+
+```
+
+b. Describe the data. Get the structure or the summary of the data
+
+```{r}
+str(Data)
+summary(Data)
+```
+
+c. Is the mean number of siblings attending is 5?
+
+```{r}
+mean(Data$SiblingsAtSchool)
+```
+
+d. Extract the 1st two rows and then all the columns using the subsetting functions.
+Write the codes and its output.
+
+```{r}
+Data[1:2, ]
+```
+
+e. Extract 3rd and 5th row with 2nd and 4th column. Write the codes and its result.
+
+```{r}
+Data[c(3, 5), c(2, 4)]
+```
+
+f. Select the variable types of houses then store the vector that results as types_houses.
+Write the codes.
+
+```{r}
+types_houses <- Data$TypesOfHouses
+types_houses
+```
+
+g. Select only all Males respondent that their father occupation was farmer. Write the
+codes and its output.
+
+```{r}
+MalesRespo <- subset(Data, Sex == 1 & FatherOccupation == 1)
+MalesRespo
+```
+
+h. Select only all females respondent that have greater than or equal to 5 number of
+siblings attending school. Write the codes and its outputs.
+
+```{r}
+FemalesRespo <- subset(Data, Sex == 2 & SiblingsAtSchool >= 5)
+FemalesRespo
+```
+
+2. Write a R program to create an empty data frame. Using the following codes:
+
+```{r}
+df = data.frame(Ints=integer(),
+
+Doubles=double(), Characters=character(),
+Logicals=logical(),
+Factors=factor(),
+stringsAsFactors=FALSE)
+
+print("Structure of the empty dataframe:")
+print(str(df))
+```
+
+a. Describe the results.
+
+-The output clearly indicates that It have successfully created an empty dataframe with specified column types but no data.
+
+3. Create a .csv file of this. Save it as HouseholdData.csv
+
+a. Import the csv file into the R environment. Write the codes.
+
+```{r}
+filedata <- read.csv("HouseholdData.csv")
+```
+
+b. Convert the Sex into factor using factor() function and change it into integer.[Legend:
+Male = 1 and Female = 2]. Write the R codes and its output.
+
+```{r}
+filedata$Sex <- factor(filedata$Sex, levels = c("Male", "Female"), labels = c(1,2))
+filedata
+```
+c. Convert the Type of Houses into factor and change it into integer. [Legend: Wood
+= 1; Congrete = 2; Semi-Congrete = 3]. Write the R codes and its output.
+
+```{r}
+filedata$TypesOfHouses <- factor(filedata$TypesOfHouses, levels = c("Wood", "Congrete", "Semi-congrete"), labels = c(1,2,3))
+filedata
+```
+
+d. On father’s occupation, factor it as Farmer = 1; Driver = 2; and Others = 3. What
+is the R code and its output?
+
+```{r}
+filedata$FathersOccupation <- factor(filedata$FathersOccupation, levels = c(1,2,3), labels = c("Farmer", "Driver", "Others"))
+filedata
+```
+
+e. Select only all females respondent that has a father whose occupation is driver. Write
+the codes and its output.
+
+```{r}
+DriverDad <- subset(filedata, Sex == 2 & FathersOccupation == "Driver")
+DriverDad
+```
+
+f. Select the respondents that have greater than or equal to 5 number of siblings attending
+school. Write the codes and its output.
+
+```{r}
+FiveSiblings <- subset(filedata, Respondents & SiblingsAtSchool >= 5)
+FiveSiblings
+```
+
+
+4. Interpret the graph.
+
+-The graph reflects a general mood of concern or dissatisfaction on social media during the period, with negative sentiments dominating the conversation. It shows the number of tweets per day from July 14 to July 21, 2020, with sentiment categories reveals clear patterns in social media behavior.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
